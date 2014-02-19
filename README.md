@@ -10,6 +10,7 @@ Hy
 
 Lisp and Python should love each other. Let's make it happen. [Try it](http://try-hy.appspot.com/).
 
+
 Hylarious Hacks
 ---------------
 
@@ -21,23 +22,33 @@ Hylarious Hacks
 
 [miniKanren in Hy](https://github.com/algernon/adderall)
 
-OK, so, why?
-------------
 
-Well. Python is awesome. So awesome, that we have so many tools to alter the
-languge in a *core* way, but we never use them.
+What is Hy?
+-----------
+Hy is a LISP-1 living off the restricitons imposed by the Python runtime, while delivering all the goods from Lisp. Python versions 2.6 all the way up to, and including, 3.4 and PyPy is supported. Bidirectional interop gives you the possibilities of using Hy and Python together as one, and not two separate languages. We got
+![Macros](http://docs.hylang.org/en/latest/language/api.html#defmacro),
+![CLOS Syntax](http://docs.hylang.org/en/latest/language/api.html#defclass) for objects, 
+![Reader Macros](http://docs.hylang.org/en/latest/language/readermacros.html), and even
+![loop/recur](http://docs.hylang.org/en/latest/contrib/loop.html) for those cases where you need recursion!
 
-Why?
 
-Well, I wrote Hy to help people realize one thing about Python:
+OK, so, why do this sorcery?
+----------------------------
+Hy proves that the Python runtime is not completely different from the LLVM or JVM. You can remove the syntax provided by Python, and replace it with anything. There is not really any big limits when working with the AST provided. Haskell, PHP or Befunge, you could do all of it! Go do it!
 
+```
+I wrote Hy to help people realize one thing about Python:
 It's really awesome.
-
 Oh, and lisps are neat.
+```
+~ Paul Tagliamonte, Hy creator & BDFL
+
+
 
 ![](http://i.imgur.com/QbPMXTN.png)
 
 (fan art from the one and only [doctormo](http://doctormo.deviantart.com/art/Cuddles-the-Hacker-372184766))
+
 
 Project
 -------
